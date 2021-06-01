@@ -1,4 +1,4 @@
-.ImageUpload{
+.ImgUpload{
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -10,6 +10,6 @@
     border-top: solid lightgrey;
 }
 
-.ImageUpload__progress{
+.ImgUpload__progress{
     width: 100%;
 }

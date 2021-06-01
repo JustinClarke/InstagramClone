@@ -5,7 +5,7 @@ import {db, auth} from "./firebase";
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import {Button,Input} from '@material-ui/core';
-import ImageUpload from './ImageUpload';
+import ImgUpload from './ImgUpload';
 import InstagramEmbed from 'react-instagram-embed';
 
 
@@ -206,7 +206,7 @@ function App() {
           </div>
       </div>
 
-      {/* {user?.displayName ? (<ImageUpload username= {user.displayName} />):(<h3>Sorry you need to login !!</h3>)} */}
+      {user?.displayName ? (<ImgUpload username= {user.displayName} />):(<h3>Sorry you need to login !!</h3>)}
     </div>
 
   );
