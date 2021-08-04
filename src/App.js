@@ -61,6 +61,7 @@ function App() {
       unsubscribe();
     }
   },[user , username]);
+
   useEffect(()=>{
     db.collection('posts').orderBy('timestamp','desc').onSnapshot((snapshot) => {
       setPosts(
@@ -153,6 +154,7 @@ function App() {
       
       
       </Modal>
+      
       <div className="app__header">
         {/* <img
           className="app__headerimage" 

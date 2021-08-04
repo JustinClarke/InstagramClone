@@ -17,7 +17,7 @@ function Post({postId,user,username,caption,imgUrl}) {
             .orderBy("timestamp","asc")
             .onSnapshot((snapshot)=>{
                 setComments(snapshot.docs.map((doc)=>doc.data()))
-            })  
+            })
         }
         return () => {
             unsubscribe();
