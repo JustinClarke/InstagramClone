@@ -151,8 +151,6 @@ function App() {
         
           </form>
         </div>
-      
-      
       </Modal>
       
       <div className="app__header">
